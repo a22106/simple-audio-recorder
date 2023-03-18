@@ -29,12 +29,13 @@ npm run build
 
 ## Usage
 1. Start the server:
+- on the src
   ```bash
-node server.js
+npm run serve
 ```
 
 2. Open the application:
-Navigate to http://localhost:3000 (or the port you specified) in your browser to access the Simple Audio Recorder app.
+Navigate to http://localhost:8080 (or the port you specified) in your browser to access the Simple Audio Recorder app.
 
 ## Features
 - Record audio using your device's microphone
