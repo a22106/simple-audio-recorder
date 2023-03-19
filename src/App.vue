@@ -26,6 +26,9 @@
 
 <script>
 import axios from "axios";
+import dotenv from 'dotenv';
+dotenv.config();
+
 export default {
   data() {
     return {
@@ -109,11 +112,12 @@ export default {
 
       try {
         // Change the URL to the specified IP address of the server
-        const response = await axios.post("http://34.64.74.106:3000/api/save-audio", formData);
+        const apiUrl = process.env.API_URL;
+        const response = await axios.post(`${apiUrl}/api/save-audio`, formData);
         console.log(response.data.message);
       } catch (error) {
-        console.error("Error saving audio file", error);}
-      
+        console.error('Error saving audio file', error);
+      }
     }
   },
 };
