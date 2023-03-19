@@ -30,7 +30,7 @@ npm run build
 ## Usage
 1. Start the server:
 - on the src
-  ```bash
+```bash
 npm run serve
 ```
 
